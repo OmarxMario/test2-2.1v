@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="scrollbar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+    <link rel="stylesheet" href="ac.css">
+</head>
+<body>
+    <div class="card">
+        <img src="img/omarmostafa Anime.png" alt="" width="200" height="200" style="border-radius: 50%;">
+        <h1>Pls Folow</h1>
+        <div class="s-m">
+            <a href="#" onclick="linkx(`https://www.tiktok.com/@omar.mario48`)"><i class="fa-brands fa-tiktok"></i></a>
+            <a href="#" onclick="linkx(`https://www.instagram.com/omarmostafax2011/`)"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" onclick="linkx(`https://www.facebook.com/profile.php?id=61555125195358`)"><i class="fa-brands fa-facebook"></i></a>
+        </div>
+    </div>
+    <script>
+        function openx(){
+            document.getElementById('1').style.display='none';
+            document.getElementById('2').style.display='flex';
+        }
+        function exitx(){
+            document.getElementById('1').style.display='flex';
+            document.getElementById('2').style.display='none';
+
+        }
+        function link(l){
+            exitx();
+            document.querySelector('iframe').src=l;
+        }
+        function linkx(l){
+            window.open(l);
+            window.close();
+        }
+
+
+
+  // Run the detection periodically
+ 
+    </script>
+</body>
+</html>

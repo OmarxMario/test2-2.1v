@@ -1,0 +1,393 @@
+*{
+    margin: 0;
+    padding: 0;
+    user-select: none;
+    scroll-behavior: smooth;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+body{
+    min-height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+    
+
+    display: flex;
+    flex-direction: column;
+    
+}
+
+header{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    backdrop-filter: blur(400px);
+    -webkit-backdrop-filter: blur(400px);
+    
+
+}
+header a{
+    font-size: 35px;
+    margin-inline: 10px;
+    background: linear-gradient(90deg,#e45eeb,#3d7bff);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: spin ease infinite 0.7s;
+    -webkit-animation: spin linear infinite 10s;
+}
+header button{
+    background-color: transparent;
+    font-size: 35px;
+    border: none;
+    outline: none;
+    color: white;
+    margin-inline: 10px;
+    cursor: pointer;
+
+}
+section{
+    display: flex;
+    
+    width: 100vw;
+    min-height: 100vh;
+    flex-direction: column;
+    
+}
+.m{
+    margin-top: 70px;
+}
+#ea{
+    background: url(img/Smoke\ Colors\ GIF\ by\ Douglas\ Schatz.gif) no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    justify-content: space-around;
+    
+    
+    
+}
+.img{
+    width: 300px;
+    height: 300px;
+    border-radius: 8px;
+    box-shadow: #000000a5 16px 16px 16px;
+    background: url(img/Law\ School\ College\ GIF\ \(1\).gif) no-repeat;
+    background-size: cover;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    transition: 0.7s ease;
+    cursor: pointer;
+    -webkit-transition: 0.7s ease;
+    -moz-transition: 0.7s ease;
+    -ms-transition: 0.7s ease;
+    -o-transition: 0.7s ease;
+}
+.img:hover{
+    transform: rotateZ(4deg);
+    -webkit-transform: rotateZ(4deg);
+    -moz-transform: rotateZ(4deg);
+    -ms-transform: rotateZ(4deg);
+    -o-transform: rotateZ(4deg);
+}
+main section{
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    
+
+    background: url(img/Loop\ Shock\ GIF\ by\ xponentialdesign.gif) no-repeat;
+    background-attachment: fixed;
+    
+    background-size: cover;
+    background-position: center;
+    
+}
+header button i{
+    background: linear-gradient(45deg,#0b8381,#a83dff);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+h1{
+    font-size: 45px;
+    color: #fff;
+    transition: 0.7s ease;
+    animation: faded linear 1.2s;
+    
+    -webkit-transition: 0.7s ease;
+    -moz-transition: 0.7s ease;
+    -ms-transition: 0.7s ease;
+    -o-transition: 0.7s ease;
+    }
+
+a{
+    text-decoration: none;
+    display: flex;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+}
+iframe{
+    width: 100vw;
+    height: 100vh;
+}
+.btn h3{
+    background: linear-gradient(45deg,#efd9d9,#ddd8f6);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.btn{
+    background: linear-gradient(34deg,#9000ff,#00e1ff);
+    font-size: 25px;
+    border-radius: 8px;
+    padding-inline: 20px;
+    gap: 10px;
+    height: 70px;
+    color: #ffffffe4;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    position: relative;
+    max-width: 250px;
+    transition: 0.7s ease;
+    animation: faded linear 1.2s;
+    -webkit-animation: faded linear 1.2s;
+    -webkit-transition: 0.7s ease;
+    -moz-transition: 0.7s ease;
+    -ms-transition: 0.7s ease;
+    -o-transition: 0.7s ease;
+}
+
+@keyframes faded{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.btn:hover{
+    background: linear-gradient(45deg,#ff00f7,#0073ff);
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+.content{
+    width: 100%;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+    
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+
+    background: #00000068;
+    border-radius: 8px;
+    backdrop-filter: blur(40px);
+    width: 250px;
+    height: 220px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    margin: 20px;
+    cursor: pointer;
+    transition: 0.7s ease;
+    -webkit-transition: 0.7s ease;
+    -moz-transition: 0.7s ease;
+    -ms-transition: 0.7s ease;
+    -o-transition: 0.7s ease;
+    
+    
+}
+.card{
+    height: 300px;
+    width: 275px;
+}
+.card h3{
+    font-size: 25px;
+    background: linear-gradient(45deg,#e364df,#7388fa);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+}
+.card h5{
+    font-size: 15px;
+    background: linear-gradient(45deg,#ea7ee6,#8c9cf5);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.card:hover{
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+@media (max-width:1024px){
+    main section{
+        flex-direction: column-reverse;
+        align-items: center;
+
+    }
+    main section *{
+        font-size: 25px;
+    }
+    .cont{
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+
+    }
+    .img{
+        width: 200px;
+        height: 200px;
+    }
+}
+.card  i{
+    font-size: 100px;
+    background: linear-gradient(45deg,#ac6ce8,#42fc9f);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+}
+.card a{
+    display: flex;
+    padding: 10px 20px;
+    
+    color: #fff;
+    
+
+    border-radius: 8px;
+    align-items: center;
+    background-color: #00000069;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px; 
+}
+.card a i{
+    font-size: 20px;
+    margin-inline: 10px;
+    color: #fff;
+
+    -webkit-text-fill-color: inherit;
+}
+.card a h3,.card a h3 i{
+    background: linear-gradient(45deg,#ffffff,#ffffff);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.card a:hover * {
+    background: linear-gradient(45deg, #ae00ff, #f29fff);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.card a:hover{
+    background-color: #000000c4;
+}
+
+
+
+@media (max-width:646px){
+    #ea{
+        justify-content: space-around;
+    }
+    .card i{
+        font-size: 50px;
+    }
+    .card{
+        height: 210px;
+        width: 250px;
+        margin: 10px;
+    }
+}
+.main{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    transition: 0.7s ease;
+}
+.d{
+    width: 100%;
+    height: 100vh;
+    background: url(img/Smoke\ Colors\ GIF\ by\ Douglas\ Schatz.gif) no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    
+    display: none;
+    flex-direction: column;
+    transition: 0.7s ease;
+    
+}
+.d header{
+    position: relative;
+}
+.d header button{cursor: pointer;}
+.contntet{
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    width: 100vw;
+    height: 100vh;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    
+}
+.contntet a{
+    width: 100%;
+    height: 60px;
+    background: #00000050;
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 10px;
+    margin-top: 10px;
+    backdrop-filter: blur(400px);
+    -webkit-backdrop-filter: blur(400px);
+}
+
+.contntet a:hover{
+    background-color: rgba(0, 0, 0, 0.512);
+    color: #dd76ff;
+
+    
+
+}
+::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-track{
+    background-color: #fff;
+}
+::-webkit-scrollbar-track{
+    background-color: #000;
+}
+@media screen and (max-height:534px),screen and (max-width:332px){
+    h1{
+        font-size: 30px;
+    }
+    .btn *{
+        font-size: 25px;
+    }
+}

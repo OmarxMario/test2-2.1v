@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title style="font-family: ui;">Oteach</title>
+    <link rel="shortcut icon" href="img/Screenshot 2025-01-17 111017.png" type="image/x-icon" style="border-radius: 2px;">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body{
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+    <div class="mx" id="1">
+        <header>
+            <a href="#" class="logo" onclick="document.querySelector('iframe').src='main.html#main'">Oteach</a>
+            <button id="menu-btn" onclick="openx();" style="cursor: pointer;"><i class="fa-solid fa-bars"></i></button>
+            
+        </header>
+        <iframe src="main.html" frameborder="0"></iframe>
+    </div>
+    <div class="d" id="2">
+        <header><button onclick="exitx()"><i class="fa-solid fa-x"></i></button></header>
+        <div class="contntet">
+            <a href="#" onclick="link('english.html');"><i class="fa-solid fa-book" ></i> انجليزي</a>
+            <a href="#" onclick="link('arbic.html');"><i class="fa-solid fa-book"></i> عربي</a>
+            <a href="#" onclick="linkx('https://omarxmario.github.io/pro/');"><i class="fa-solid fa-address-card"></i></i> معلومات عامة عني</a>
+            <a href="#" onclick="link('contact.html');"><i class="fa-solid fa-phone"></i> تواصل</a>
+            <a href="#" onclick="link('rab.html')"><i class="fa-solid fa-bug"></i> تبليغ عن خطأ</a>
+            <a href="#" onclick="linkx(`https://moro933978.github.io/programming-home99/`)"><i class="fa-solid fa-code"></i> تعلم برمجة مع مستر كوفي مكس</a>
+            <a href="#" onclick="link('comm.html')"><i class="fa-regular fa-comment"></i> تعليقات</a>
+        </div>
+        
+    </div>
+    <script>
+        function openx(){
+            document.getElementById('1').style.display='none';
+            document.getElementById('2').style.display='flex';
+        }
+        function exitx(){
+            document.getElementById('1').style.display='flex';
+            document.getElementById('2').style.display='none';
+
+        }
+        function link(l){
+            exitx();
+            document.querySelector('iframe').src=l;
+        }
+        function linkx(l){
+            window.open(l);
+            window.close();
+        }
+
+
+
+  // Run the detection periodically
+ 
+    </script>
+
+</body>
+</html>
